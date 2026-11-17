@@ -1,0 +1,6 @@
+﻿state.json
+lapian_out/
+out/
+*.mp4
+__pycache__/
+.venv/
