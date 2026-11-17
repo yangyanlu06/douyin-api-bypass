@@ -1,5 +1,15 @@
 # 绕过抖音接口关死 · 解析抖音视频给 agent
 
+## 姊妹项目 · DSH 抖音壁纸插件
+
+**粘贴一条抖音链接，DSH 的极简界面就变成它的播放背景：视频铺满窗口，界面像磨砂玻璃浮在上面。**
+
+[![抖音视频铺满窗口，侧栏与输入框变成磨砂玻璃浮在画面上](assets/preview.svg)](https://github.com/yangyanlu06/dsh-douyin-wallpaper)
+
+插件在本仓库取流方法之上做了两层：`lapian_bridge.py` 的事件驱动等待（见下文「实测坑位」第 1 条），
+以及把整段界面变成半透明玻璃的 Web 端。→ [dsh-douyin-wallpaper](https://github.com/yangyanlu06/dsh-douyin-wallpaper)
+
+---
 抖音把官方接口对服务端读者关死之后，把一条分享链接变成可播放 mp4 的唯一稳定路子：
 **headless Edge（playwright + 系统 Edge）**，取页面自己 XHR 里的 `video.play_addr`。
 本仓库是新版实现 + 一份实测记录，供 agent 直接调用。
@@ -82,3 +92,4 @@ Python 3.12 实测可用（playwright 1.65.2 / opencv 5.0 / numpy 2.5.5 / scened
 ## 不做什么
 
 不逆向签名、不去水印、不批量爬取、不并发轰炸。失败即停。
+
