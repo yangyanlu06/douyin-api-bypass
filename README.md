@@ -4,7 +4,7 @@
 
 **粘贴一条抖音链接，DSH 的极简界面就变成它的播放背景：视频铺满窗口，界面像磨砂玻璃浮在上面。**
 
-[![抖音视频铺满窗口，侧栏与输入框变成磨砂玻璃浮在画面上](assets/preview.svg)](https://github.com/yangyanlu06/dsh-douyin-wallpaper)
+[![抖音视频铺满窗口，侧栏与输入框变成磨砂玻璃浮在画面上](assets/preview.jpg)](https://github.com/yangyanlu06/dsh-douyin-wallpaper)
 
 插件在本仓库取流方法之上做了两层：`lapian_bridge.py` 的事件驱动等待（见下文「实测坑位」第 1 条），
 以及把整段界面变成半透明玻璃的 Web 端。→ [dsh-douyin-wallpaper](https://github.com/yangyanlu06/dsh-douyin-wallpaper)
